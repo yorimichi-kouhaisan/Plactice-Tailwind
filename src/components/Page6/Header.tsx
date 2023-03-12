@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import ScrollLink from "./ScrollLink";
 import styles from "@/styles/hamburger.module.css"
 import logoWhite from "public/images/Page6/logo-bookmark.svg"
 import logoBlack from "public/images/Page6/logo-bookmark-footer.svg"
@@ -23,10 +24,10 @@ const Header = () => {
                     </div>
                     {/* Menu Items */}
                     <div className="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
-                        <Link href={"#features"} className="tracking-widest hover:text-softRed">Features</Link>
-                        <Link href={"#download"} className="tracking-widest hover:text-softRed">Download</Link>
-                        <Link href={"#faq"} className="tracking-widest hover:text-softRed">FAQ</Link>
-                        <Link href={"#login"} className="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-red-100">Login</Link>
+                        <ScrollLink href={"#features"} className="tracking-widest hover:text-softRed">Features</ScrollLink>
+                        <ScrollLink href={"#download"} className="tracking-widest hover:text-softRed">Download</ScrollLink>
+                        <ScrollLink href={"#faq"} className="tracking-widest hover:text-softRed">FAQ</ScrollLink>
+                        <ScrollLink href={"#login"} className="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-red-100">Login</ScrollLink>
                     </div>
 
                     {/* Hamberger */}
@@ -42,16 +43,16 @@ const Header = () => {
                                           px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500
                                           opacity-90 bg-veryDarkBlue`}>
                     <div className="w-full py-3 text-center hover:text-softRed">
-                        <Link href="#features">Features</Link>
+                        <ScrollLink href="#features">Features</ScrollLink>
                     </div>
                     <div className="w-full py-3 text-center hover:text-softRed">
-                        <Link href="#download">Downloads</Link>
+                        <ScrollLink href="#download">Downloads</ScrollLink>
                     </div>
                     <div className="w-full py-3 text-center hover:text-softRed">
-                        <Link href="#faq">FAQ</Link>
+                        <ScrollLink href="#faq">FAQ</ScrollLink>
                     </div>
                     <div className="w-full py-3 text-center hover:text-softRed">
-                        <Link href="#">Login</Link>
+                        <ScrollLink href="#">Login</ScrollLink>
                     </div>
                 </div>
             </header>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollLink from "./ScrollLink";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -15,9 +16,9 @@ const Footer = () => {
                 <div className="container flex flex-col items-center justify-start mx-auto
                                 space-y-16 px-6 md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue">
                     <Image src={footerImg} alt="" className="mg-1" />
-                    <Link href="#features" className="uppercase">Features</Link>
-                    <Link href="#download" className="uppercase">Downloads</Link>
-                    <Link href="#faq" className="uppercase">FAQ</Link>
+                    <ScrollLink href="#features" className="uppercase">Features</ScrollLink>
+                    <ScrollLink href="#download" className="uppercase">Downloads</ScrollLink>
+                    <ScrollLink href="#faq" className="uppercase">FAQ</ScrollLink>
                 </div>
 
                 {/* Social Container */}
